@@ -49,65 +49,12 @@
         .logo {
             font-size: 100px;
             margin-bottom: 20px;
-            animation: bounce 1.5s infinite, spin 4s linear infinite;
+            animation: pulse 2s infinite;
         }
 
         @keyframes pulse {
             0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-        }
-
-        @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-30px); }
-        }
-
-        @keyframes glow {
-            0%, 100% { box-shadow: 0 0 20px rgba(239, 68, 68, 0.3); }
-            50% { box-shadow: 0 0 40px rgba(239, 68, 68, 0.8), 0 0 60px rgba(239, 68, 68, 0.5); }
-        }
-
-        @keyframes slideInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-100px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes slideInRight {
-            from {
-                opacity: 0;
-                transform: translateX(100px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes shake {
-            0%, 100% { transform: translateX(0); }
-            25% { transform: translateX(-10px) rotate(-5deg); }
-            75% { transform: translateX(10px) rotate(5deg); }
-        }
-
-        @keyframes expandContract {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.15); }
+            50% { transform: scale(1.05); }
         }
 
         h1 {
@@ -117,7 +64,6 @@
             -webkit-text-fill-color: transparent;
             margin-bottom: 20px;
             font-weight: 800;
-            animation: expandContract 2s ease-in-out infinite;
         }
 
         .slogan {
@@ -197,19 +143,12 @@
             font-size: 14px;
             margin-bottom: 20px;
             display: inline-block;
-            animation: pulse 2s ease-in-out infinite;
         }
 
         h3 {
             font-size: 42px;
             margin-bottom: 25px;
             line-height: 1.2;
-            transition: all 0.3s ease;
-        }
-
-        .content-wrapper:hover h3 {
-            color: #ef4444;
-            transform: scale(1.05);
         }
 
         .campaign-text {
@@ -242,13 +181,6 @@
             text-align: center;
             margin: 20px 0;
             box-shadow: 0 10px 40px rgba(239, 68, 68, 0.3);
-            animation: glow 2s ease-in-out infinite;
-            transition: transform 0.3s ease;
-        }
-
-        .stat-box:hover {
-            transform: scale(1.1) rotate(2deg);
-            animation: shake 0.5s ease-in-out;
         }
 
         .stat-number {
@@ -272,20 +204,11 @@
         .comparison-item {
             padding: 30px;
             border-radius: 12px;
-            transition: all 0.3s ease;
-        }
-
-        .comparison-item:hover {
-            transform: scale(1.05) translateY(-10px);
         }
 
         .good {
             background: rgba(239, 68, 68, 0.15);
             border: 2px solid #ef4444;
-        }
-
-        .good:hover {
-            box-shadow: 0 0 40px rgba(239, 68, 68, 0.6);
         }
 
         .bad {
@@ -296,8 +219,6 @@
         .icon {
             font-size: 48px;
             margin-bottom: 15px;
-            display: inline-block;
-            animation: float 3s ease-in-out infinite;
         }
 
         .people-grid {
@@ -312,19 +233,11 @@
             padding: 25px;
             border-radius: 12px;
             text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .person-card:hover {
-            background: rgba(239, 68, 68, 0.2);
-            transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(239, 68, 68, 0.4);
         }
 
         .person-icon {
             font-size: 60px;
             margin-bottom: 15px;
-            animation: float 3s ease-in-out infinite;
         }
 
         .testimonial-card {
@@ -332,12 +245,6 @@
             padding: 30px;
             border-radius: 15px;
             border: 2px solid #ef4444;
-            transition: all 0.3s ease;
-        }
-
-        .testimonial-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 40px rgba(239, 68, 68, 0.6);
         }
 
         .testimonial-header {
@@ -349,7 +256,6 @@
 
         .testimonial-icon {
             font-size: 80px;
-            animation: bounce 2s ease-in-out infinite;
         }
 
         .testimonial-info h4 {
@@ -392,13 +298,6 @@
             padding: 35px;
             border-radius: 15px;
             border: 2px solid #ef4444;
-            transition: all 0.3s ease;
-        }
-
-        .technique-card:hover {
-            background: rgba(239, 68, 68, 0.15);
-            transform: translateY(-10px);
-            box-shadow: 0 10px 40px rgba(239, 68, 68, 0.5);
         }
 
         .technique-card h4 {
@@ -435,12 +334,10 @@
             margin-top: 30px;
             box-shadow: 0 8px 25px rgba(239, 68, 68, 0.4);
             transition: transform 0.2s;
-            animation: pulse 2s ease-in-out infinite;
         }
 
         .cta-button:hover {
-            transform: translateY(-3px) scale(1.1);
-            animation: shake 0.5s ease-in-out;
+            transform: translateY(-3px);
         }
 
         .badge-container {
@@ -457,13 +354,6 @@
             font-size: 15px;
             color: #ef4444;
             border: 1px solid #ef4444;
-            transition: all 0.3s ease;
-        }
-
-        .badge:hover {
-            background: #ef4444;
-            color: white;
-            transform: scale(1.2) rotate(5deg);
         }
 
         .trophy-row {
@@ -481,11 +371,6 @@
         .trophy-icon {
             font-size: 72px;
             margin-bottom: 10px;
-            animation: bounce 2s ease-in-out infinite;
-        }
-
-        .trophy-icon:hover {
-            animation: spin 1s linear infinite;
         }
 
         /* Animation Classes */
@@ -533,37 +418,12 @@
         .stagger-5 { animation-delay: 0.5s; }
         .stagger-6 { animation-delay: 0.6s; }
 
-        /* Drake Maye Number Animation */
-        .maye-number {
-            font-size: 120px;
-            font-weight: 900;
-            color: #ef4444;
-            text-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
-            animation: float 3s ease-in-out infinite, glow 2s ease-in-out infinite;
-            display: inline-block;
-        }
-
-        .slide-in-left {
-            animation: slideInLeft 1s ease-out forwards;
-            opacity: 0;
-        }
-
-        .slide-in-right {
-            animation: slideInRight 1s ease-out forwards;
-            opacity: 0;
-        }
-
-        .shake-animation {
-            animation: shake 0.5s ease-in-out;
-        }
-
         @media (max-width: 768px) {
             h1 { font-size: 48px; }
             h3 { font-size: 32px; }
             .content-wrapper { flex-direction: column; }
             .technique-grid { grid-template-columns: 1fr; }
             .people-grid { grid-template-columns: 1fr; }
-            .maye-number { font-size: 80px; }
         }
     </style>
 </head>
@@ -581,10 +441,6 @@
         <div class="slide-number">Slide 2</div>
         <div class="intro-content">
             <h2>Why Drake Maye Deserves MVP</h2>
-            <div style="margin: 30px 0;">
-                <div class="maye-number">#10</div>
-                <div style="font-size: 24px; color: #f59e0b; margin-top: 10px;">DRAKE MAYE - PATRIOTS QB</div>
-            </div>
             <p>Drake Maye, the rising star quarterback, has changed the game with his incredible talent, leadership, and game winning performances throughout the 2025 season.</p>
             <div class="highlight-box">
                 <h3 style="font-size: 28px; margin-bottom: 15px;">Target Audience</h3>
@@ -708,7 +564,7 @@
                         <div class="stat-label">In Passing Touchdowns</div>
                     </div>
                     <div class="stat-box">
-                        <div class="stat-number" data-count="74.1%">74.1%</div>
+                        <div class="stat-number" data-count="74.1%">0%</div>
                         <div class="stat-label">Completion Percentage (Leads the NFL)</div>
                     </div>
                 </div>
@@ -774,4 +630,107 @@
                 <div class="technique-card">
                     <h4>4. Glittering Generalities</h4>
                     <span class="location">Slide 6</span>
-                    <p><strong>How it works:</strong> Uses vague, emotionally powerful words like "excellence," "destiny," "honor," "courage," and "greatness" without specific meaning or evidence. These words trigger positive emotions and patriotic feelings without making concrete, verifiable claims about
+                    <p><strong>How it works:</strong> Uses vague, emotionally powerful words like "excellence," "destiny," "honor," "courage," and "greatness" without specific meaning or evidence. These words trigger positive emotions and patriotic feelings without making concrete, verifiable claims about Maye's actual performance.</p>
+                </div>
+
+                <div class="technique-card">
+                    <h4>5. Card Stacking</h4>
+                    <span class="location">Slide 7</span>
+                    <p><strong>How it works:</strong> Presents only selective statistics that favor Drake Maye (strong performances, game winning drives) while avoiding mention of areas where other candidates might lead or where he's still developing as a rookie. This one sided presentation manipulates perception by hiding less favorable data or context.</p>
+                </div>
+
+                <div class="technique-card">
+                    <h4>6. Plain Folks Appeal</h4>
+                    <span class="location">Slide 8</span>
+                    <p><strong>How it works:</strong> Portrays Drake Maye as relatable and down to earth by showing support from everyday working-class people and emphasizing his humble characteristics. Makes him seem like "one of us" rather than an elite athlete, creating emotional connection and trust with regular voters.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Intersection Observer for scroll-triggered animations
+        const observerOptions = {
+            threshold: 0.3,
+            rootMargin: '0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    // Trigger stat counting animations
+                    const statNumbers = entry.target.querySelectorAll('.stat-number[data-count]');
+                    statNumbers.forEach(stat => {
+                        if (!stat.classList.contains('counted')) {
+                            animateCount(stat);
+                            stat.classList.add('counted');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        // Count-up animation function
+        function animateCount(element) {
+            const target = element.getAttribute('data-count');
+            const isPercentage = target.includes('%');
+            const targetNum = parseFloat(target);
+            const duration = 2000;
+            const steps = 60;
+            const increment = targetNum / steps;
+            let current = 0;
+            const stepTime = duration / steps;
+
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= targetNum) {
+                    current = targetNum;
+                    clearInterval(timer);
+                }
+                
+                if (isPercentage) {
+                    element.textContent = current.toFixed(1) + '%';
+                } else if (target.includes('place') || target.includes('rd') || target.includes('st') || target.includes('th')) {
+                    element.textContent = target;
+                } else {
+                    element.textContent = Math.round(current).toLocaleString();
+                }
+            }, stepTime);
+        }
+
+        // Initialize animations when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            // Observe all slides for scroll animations
+            const slides = document.querySelectorAll('.slide');
+            slides.forEach(slide => observer.observe(slide));
+
+            // Add animation classes to elements
+            document.querySelectorAll('.testimonial-card').forEach(el => {
+                el.classList.add('scale-in');
+            });
+
+            document.querySelectorAll('.stat-box').forEach((el, index) => {
+                el.classList.add('slide-up', `stagger-${index + 1}`);
+            });
+
+            document.querySelectorAll('.badge').forEach((el, index) => {
+                el.classList.add('fade-in', `stagger-${(index % 6) + 1}`);
+            });
+
+            document.querySelectorAll('.person-card').forEach((el, index) => {
+                el.classList.add('slide-up', `stagger-${index + 1}`);
+            });
+
+            document.querySelectorAll('.technique-card').forEach((el, index) => {
+                el.classList.add('fade-in', `stagger-${(index % 3) + 1}`);
+            });
+
+            document.querySelectorAll('.comparison-item').forEach((el, index) => {
+                el.classList.add('slide-up', `stagger-${index + 1}`);
+            });
+        });
+    </script>
+</body>
+</html>
